@@ -1,4 +1,4 @@
-#!/home/t/untitled/env_mysite/bin/python
+#!/home/t/django/env_mysite/bin/python
 
 # -*- coding: utf-8 -*-
 import re
