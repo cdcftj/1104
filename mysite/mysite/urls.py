@@ -17,7 +17,13 @@ from django.contrib import admin
 from django.conf.urls import include,url
 from django.contrib import admin
 from mysite.views import hello
+from django.conf.urls import include, url
+from django.contrib import admin
+from mysite.views import hello,current_datetime
+
 urlpatterns = [
-url(r'^admin/', include(admin.site.urls)),
-url(r'^hello/$', hello),
+    url(r'^admin/', include(admin.site.urls)), #正则表达式，各个配置的名称都是大写的，TEMPLATE_DIRS
+    url(r'^hello/$', hello),
+    url(r'^time/$',current_datetime),
 ]
+#时区是UTC'
